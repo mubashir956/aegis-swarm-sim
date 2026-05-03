@@ -1,0 +1,38 @@
+{
+  "mission_start": "2026-05-03T14:23:38.690545",
+  "total_survivors": 4,
+  "detections": [
+    {
+      "id": 2,
+      "x": 6.9,
+      "y": -0.0,
+      "distance": 7.21,
+      "timestamp": "2026-05-03T14:23:38.690545",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 2,
+      "x": 6.98,
+      "y": -0.0,
+      "distance": 7.03,
+      "timestamp": "2026-05-03T14:27:39.165210",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 1,
+      "x": 2.08,
+      "y": -0.0,
+      "distance": 9.84,
+      "timestamp": "2026-05-03T14:31:02.102829",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 2,
+      "x": 6.22,
+      "y": -0.0,
+      "distance": 8.86,
+      "timestamp": "2026-05-03T14:31:24.101955",
+      "unit": "crawler_1"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "mission_start": "2026-05-03T14:45:42.536435",
+  "total_survivors": 7,
+  "detections": [
+    {
+      "id": 1,
+      "x": 3.41,
+      "y": -0.0,
+      "confidence": 0.502,
+      "timestamp": "2026-05-03T14:45:42.536435",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 1,
+      "x": 0.0,
+      "y": 0.0,
+      "confidence": 0.538,
+      "timestamp": "2026-05-03T14:50:20.535764",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 2,
+      "x": 2.12,
+      "y": -0.0,
+      "confidence": 0.717,
+      "timestamp": "2026-05-03T14:51:06.524090",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 3,
+      "x": 6.32,
+      "y": -0.0,
+      "confidence": 0.528,
+      "timestamp": "2026-05-03T14:51:25.759025",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 4,
+      "x": 10.6,
+      "y": -0.0,
+      "confidence": 0.675,
+      "timestamp": "2026-05-03T14:52:03.753282",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 5,
+      "x": 3.53,
+      "y": -0.0,
+      "confidence": 0.513,
+      "timestamp": "2026-05-03T14:53:26.587828",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    },
+    {
+      "id": 6,
+      "x": 4.91,
+      "y": -0.0,
+      "confidence": 0.555,
+      "timestamp": "2026-05-03T14:53:32.589807",
+      "detection_method": "acoustic_heartbeat",
+      "unit": "crawler_1"
+    }
+  ]
+}

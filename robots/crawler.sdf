@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+<model name="crawler">
+
+  <link name="base_link">
+    <pose>0 0 0.1 0 0 0</pose>
+    <inertial>
+      <mass>3.0</mass>
+      <inertia><ixx>0.015</ixx><iyy>0.021</iyy><izz>0.032</izz></inertia>
+    </inertial>
+    <visual name="vis">
+      <geometry><box><size>0.4 0.3 0.12</size></box></geometry>
+      <material><ambient>0.2 0.2 0.2 1</ambient></material>
+    </visual>
+    <collision name="col">
+      <geometry><box><size>0.4 0.3 0.12</size></box></geometry>
+    </collision>
+
+    <!-- LiDAR sensor -->
+    <sensor name="lidar" type="gpu_lidar">
+      <pose>0.1 0 0.09 0 0 0</pose>
+      <update_rate>10</update_rate>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.15</min>
+          <max>12.0</max>
+        </range>
+      </lidar>
+      <always_on>true</always_on>
+      <topic>scan</topic>
+    </sensor>
+  </link>
+
+  <!-- Left wheel -->
+  <link name="left_wheel">
+    <pose>0 0.17 0.06 -1.5708 0 0</pose>
+    <inertial>
+      <mass>0.4</mass>
+      <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
+    </inertial>
+    <visual name="vis">
+      <geometry><cylinder><radius>0.06</radius><length>0.04</length></cylinder></geometry>
+      <material><ambient>0.1 0.1 0.1 1</ambient></material>
+    </visual>
+    <collision name="col">
+      <geometry><cylinder><radius>0.06</radius><length>0.04</length></cylinder></geometry>
+    </collision>
+  </link>
+
+  <joint name="left_wheel_joint" type="revolute">
+    <parent>base_link</parent>
+    <child>left_wheel</child>
+    <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+  </joint>
+
+  <!-- Right wheel -->
+  <link name="right_wheel">
+    <pose>0 -0.17 0.06 -1.5708 0 0</pose>
+    <inertial>
+      <mass>0.4</mass>
+      <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
+    </inertial>
+    <visual name="vis">
+      <geometry><cylinder><radius>0.06</radius><length>0.04</length></cylinder></geometry>
+      <material><ambient>0.1 0.1 0.1 1</ambient></material>
+    </visual>
+    <collision name="col">
+      <geometry><cylinder><radius>0.06</radius><length>0.04</length></cylinder></geometry>
+    </collision>
+  </link>
+
+  <joint name="right_wheel_joint" type="revolute">
+    <parent>base_link</parent>
+    <child>right_wheel</child>
+    <axis><xyz>0 0 1</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+  </joint>
+
+  <!-- Diff Drive Plugin — Gazebo Harmonic -->
+  <plugin filename="gz-sim-diff-drive-system"
+          name="gz::sim::systems::DiffDrive">
+    <left_joint>left_wheel_joint</left_joint>
+    <right_joint>right_wheel_joint</right_joint>
+    <wheel_separation>0.34</wheel_separation>
+    <wheel_radius>0.06</wheel_radius>
+    <topic>cmd_vel</topic>
+    <odom_topic>odom</odom_topic>
+    <frame_id>odom</frame_id>
+    <child_frame_id>base_link</child_frame_id>
+  </plugin>
+
+  <!-- Sensors Plugin -->
+  <plugin filename="gz-sim-sensors-system"
+          name="gz::sim::systems::Sensors">
+    <render_engine>ogre2</render_engine>
+  </plugin>
+
+</model>
+</sdf>
