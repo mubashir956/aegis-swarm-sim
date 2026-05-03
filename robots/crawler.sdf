@@ -37,7 +37,7 @@
       <topic>scan</topic>
     </sensor>
   </link>
-
+  <!-- Left Wheel -->
   <link name="left_wheel">
     <pose>0 0.17 0.06 -1.5708 0 0</pose>
     <inertial>
