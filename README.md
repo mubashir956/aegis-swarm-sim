@@ -140,14 +140,13 @@ aegis-swarm-sim/
 - [x] Signal analyzer with pattern detection
 - [x] Crawler robot URDF model
 - [x] Disaster world in Gazebo
-- [ ] C motor controller with state machine
-- [ ] SLAM map building
-- [ ] Thermal survivor detection
-- [ ] Single command launch file
-- [ ] Demo video
+- [x] C motor controller with state machine
+- [x] Single command launch file
 
 ### 🔲 Phase 2 — Intelligence Layer
-- [ ] Acoustic heartbeat ML model (trained on real data)
+-[ ] SLAM Map Buliding 
+-[ ] Thermal Survivor Detection 
+-[ ] Acoustic heartbeat ML model (trained on real data)
 - [ ] Survivor triangulation using multi-mic array
 - [ ] Full autonomous navigation with Nav2
 - [ ] Digital Twin generation
