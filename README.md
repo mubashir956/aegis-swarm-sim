@@ -197,14 +197,14 @@ A swarm of 10 AEGIS units could cover a 5-storey collapsed building in under 8 m
 ---
 
 ## Author
-*Zafreen Jagir*:
-   BE Computer Science Engineering;   
-   Saveetha Engineering Of College, Chennai;    
+1) *Zafreen Jagir*
+   BE Computer Science Engineering   
+   Saveetha Engineering Of College, Chennai   
    GitHub: [ZafreenJagir](https://github.com/ZafreenJagir).
 
-*Mohammed Mubashir*: 
-   BTech Robotics & AI Engineering;  
-   Presidency University, Bengaluru; 
+2) *Mohammed Mubashir*
+   BTech Robotics & AI Engineering  
+   Presidency University, Bengaluru
    GitHub: [@mubashir956](https://github.com/mubashir956).
 
 ---
