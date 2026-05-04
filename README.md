@@ -144,9 +144,9 @@ aegis-swarm-sim/
 - [x] Single command launch file
 
 ### 🔲 Phase 2 — Intelligence Layer
--[ ] SLAM Map Buliding 
--[ ] Thermal Survivor Detection 
--[ ] Acoustic heartbeat ML model (trained on real data)
+- [ ] SLAM Map Buliding 
+- [ ] Thermal Survivor Detection 
+- [ ] Acoustic heartbeat ML model (trained on real data)
 - [ ] Survivor triangulation using multi-mic array
 - [ ] Full autonomous navigation with Nav2
 - [ ] Digital Twin generation
